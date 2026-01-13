@@ -40,11 +40,14 @@ RUN wget https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tgz && \
     cd Python-3.13.7 && \
     ./configure --enable-optimizations && \
     make -j$(nproc) && \
-    make altinstall && \
+    make install && \
     cd / && rm -rf Python-3.13.7*
 
-RUN python3.13 -m ensurepip && \
-    python3.13 -m pip install --upgrade pip setuptools wheel
+# python3 を 3.13 に切り替え
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.13 1
+
+RUN python3 -m ensurepip && \
+    python3 -m pip install --upgrade pip setuptools wheel
 
 # =========================
 # PyPy 3.11（公式バイナリ・固定）

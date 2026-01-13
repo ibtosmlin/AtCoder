@@ -33,5 +33,3 @@ $ atc b
 $ atc f
 ```
 
-## Requirements
-[online-judge-tools](https://github.com/kmyk/online-judge-tools)

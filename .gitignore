@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# PyPy
+pypycache/
+
+# Rust
+target/
+
+# VS Code
+.vscode/
+
+# Dev Container
+.devcontainer/
