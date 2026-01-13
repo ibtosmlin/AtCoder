@@ -116,3 +116,4 @@ RUN echo 'alias py="python3.13"' >> /root/.bashrc && \
 # 作業ディレクトリ
 # =========================
 WORKDIR /workspace
+ENV PATH="/workspaces/AtCoder/scripts/bin:${PATH}"
