@@ -8,8 +8,5 @@ pypycache/
 # Rust
 target/
 
-# VS Code
-.vscode/
-
-# Dev Container
-.devcontainer/
+# work
+.work/

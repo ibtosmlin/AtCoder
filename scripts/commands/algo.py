@@ -84,9 +84,8 @@ def run_tests(task: Task, task_dir: Path) -> None:
     original_dir = Path.cwd()
     try:
         os.chdir(task_dir)
-        print("xx")
         subprocess.run(
-            ["oj", "t", "-c", "python3.13", "main.py"],
+            ["oj", "t", "-c", "python3 main.py"],
             check=False,
         )
     finally:
