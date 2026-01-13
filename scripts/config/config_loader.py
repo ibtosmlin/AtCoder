@@ -49,6 +49,7 @@ class ProjectPaths:
     SCRIPTS: Path
     PAGES: Path
     HTML_OUTPUT_FILE: Path
+    DOCS: Paths
     HTML_TEMPLATE_FILE: Path
     LIBRARY: Path
     VSCODE: Path
@@ -71,8 +72,9 @@ PATHS = ProjectPaths(
     SCRIPTS=ROOT / "scripts",
     CONFIG=ROOT / "scripts" / "config",
     CONFIG_TOML=ROOT / "scripts" / "config" / "config.toml",
+    DOCS=ROOT / "docs",
+    HTML_OUTPUT_FILE=ROOT / "docs" / "index.html",
     PAGES=ROOT / "pages",
-    HTML_OUTPUT_FILE=ROOT / "pages" / "index.html",
     HTML_TEMPLATE_FILE=ROOT / "pages" / "templates" / "template.html",
     LIBRARY=ROOT / "library",
     VSCODE=ROOT / ".vscode",
