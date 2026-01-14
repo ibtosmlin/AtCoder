@@ -116,4 +116,7 @@ RUN echo 'alias py="python3.13"' >> /root/.bashrc && \
 # 作業ディレクトリ
 # =========================
 WORKDIR /workspace
+RUN mkdir -p /workspaces/AtCoder/scripts/bin \
+    && touch /workspaces/AtCoder/scripts/bin/.keep \
+    && chmod -R +x /workspaces/AtCoder/scripts/bin
 ENV PATH="/workspaces/AtCoder/scripts/bin:${PATH}"
