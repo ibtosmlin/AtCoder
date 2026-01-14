@@ -1,0 +1,11 @@
+#!/bin/bash
+set -eu
+
+TARGET=".work"
+
+if [ -d "$TARGET" ]; then
+    find "$TARGET" -mindepth 1 -delete
+    echo "$TARGET の中身を削除しました"
+else
+    echo "$TARGET が存在しません"
+fi
