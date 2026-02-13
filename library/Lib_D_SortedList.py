@@ -1,17 +1,17 @@
 ######title######
-# 順序付き集合
+# 順序付きリスト
 ######subtitle######
-# SortedSet:クラス
+# SortedList:クラス
 
 ##############name##############
-# Sorted Set
+# Sorted List
 ######description######
 ######body######
 
-from sortedcontainers import SortedSet as SS
+from sortedcontainers import SortedList as SL
 
 
-class SortedSet(SS):
+class SortedList(SL):
     def __init__(self, iterable=None, key=None):
         super().__init__(iterable, key)
 
@@ -41,5 +41,5 @@ class SortedSet(SS):
 
 
 ######prefix######
-# Lib_D_sorted_set
+# Lib_D_sorted_list
 ##############end##############
